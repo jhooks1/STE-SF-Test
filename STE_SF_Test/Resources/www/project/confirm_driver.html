@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            confirm_driver
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/ios-like/ios-like.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.4/jquery.mobile.structure-1.4.4.css"
+        rel="stylesheet" />
+        <link type="text/css" rel="stylesheet" href="files/views/assets/css/test.css" />
+        <script type="text/javascript" src="files/resources/lib/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.4/jquery.mobile-1.4.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery-ui-map/jquery.ui.map.full.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/model.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/Salesforce_utils.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/VisitUtil.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/databaseUtils.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="confirm_driver" id="confirm_driver"
+        class="type-interior" data-theme="c">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="c" name="mobileheader" id="confirm_driver_mobileheader" class="confirm_driver_mobileheader">
+                <h1 dsid="mobileheader">
+                    Confirm Driver
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="confirm_driver_mobilecontainer" name="mobilecontainer"
+            class="confirm_driver_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="c">
+                <link href="confirm_driver.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="confirm_driver.js">
+                </script>
+                <!-- mobilegrid_19 -->
+                <div class="confirm_driver_mobilegrid_19_wrapper" data-wrapper-for="mobilegrid_19">
+                    <table id="confirm_driver_mobilegrid_19" class="confirm_driver_mobilegrid_19" dsid="mobilegrid_19"
+                    name="mobilegrid_19" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <tr class="confirm_driver_mobilegrid_19_row_0">
+                            <!-- mobilegridcell_20 -->
+                            <td id="confirm_driver_mobilegridcell_20" name="mobilegridcell_20" class="confirm_driver_mobilegridcell_20"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- enter_pin_label -->
+                                    <div name="enter_pin_label" id="confirm_driver_enter_pin_label" dsid="enter_pin_label"
+                                    data-role="appery_label" class="confirm_driver_enter_pin_label">
+                                        Enter your 4 digit Driver PIN
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="confirm_driver_mobilegrid_19_row_1">
+                            <!-- mobilegridcell_24 -->
+                            <td id="confirm_driver_mobilegridcell_24" name="mobilegridcell_24" class="confirm_driver_mobilegridcell_24"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- enter_pin_input -->
+                                    <div data-role="fieldcontain" class="confirm_driver_enter_pin_input ">
+                                        <input type="text" name="enter_pin_input" dsid="enter_pin_input" value="" placeholder="Enter PIN"
+                                        id="confirm_driver_enter_pin_input" tabindex="1" multiple data-theme="c" class="confirm_driver_enter_pin_input"
+                                        />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="confirm_driver_mobilegrid_19_row_2">
+                            <!-- mobilegridcell_25 -->
+                            <td id="confirm_driver_mobilegridcell_25" name="mobilegridcell_25" class="confirm_driver_mobilegridcell_25"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilebutton_4 --><!--
+                                    --><a data-role="button" name="mobilebutton_4" dsid="mobilebutton_4" class="confirm_driver_mobilebutton_4"
+                                    id="confirm_driver_mobilebutton_4" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                    x-apple-data-detectors="false" data-mini="false" data-theme="c" tabindex="2">
+                                    Submit
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="confirm_driver_mobilegrid_19_row_3">
+                            <!-- mobilegridcell_26 -->
+                            <td id="confirm_driver_mobilegridcell_26" name="mobilegridcell_26" class="confirm_driver_mobilegridcell_26"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilegrid_11 -->
+                <div class="confirm_driver_mobilegrid_11_wrapper" data-wrapper-for="mobilegrid_11">
+                    <table id="confirm_driver_mobilegrid_11" class="confirm_driver_mobilegrid_11" dsid="mobilegrid_11"
+                    name="mobilegrid_11" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <tr class="confirm_driver_mobilegrid_11_row_0">
+                            <!-- mobilegridcell_12 -->
+                            <td id="confirm_driver_mobilegridcell_12" name="mobilegridcell_12" class="confirm_driver_mobilegridcell_12"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- sorry_no_pin -->
+                                    <div name="sorry_no_pin" id="confirm_driver_sorry_no_pin" dsid="sorry_no_pin" data-role="appery_label"
+                                    class="confirm_driver_sorry_no_pin">
+                                        Sorry....
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="confirm_driver_mobilegrid_11_row_1">
+                            <!-- mobilegridcell_14 -->
+                            <td id="confirm_driver_mobilegridcell_14" name="mobilegridcell_14" class="confirm_driver_mobilegridcell_14"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- welcome_label -->
+                                    <div name="welcome_label" id="confirm_driver_welcome_label" dsid="welcome_label"
+                                    data-role="appery_label" class="confirm_driver_welcome_label">
+                                        Welcome, are you...
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="confirm_driver_mobilegrid_11_row_2">
+                            <!-- mobilegridcell_16 -->
+                            <td id="confirm_driver_mobilegridcell_16" name="mobilegridcell_16" class="confirm_driver_mobilegridcell_16"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- driver_name_return_label -->
+                                    <div name="driver_name_return_label" id="confirm_driver_driver_name_return_label"
+                                    dsid="driver_name_return_label" data-role="appery_label" class="confirm_driver_driver_name_return_label">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="confirm_driver_mobilegrid_11_row_3">
+                            <!-- mobilegridcell_18 -->
+                            <td id="confirm_driver_mobilegridcell_18" name="mobilegridcell_18" class="confirm_driver_mobilegridcell_18"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilegrid_27 -->
+                                    <div class="confirm_driver_mobilegrid_27_wrapper" data-wrapper-for="mobilegrid_27">
+                                        <table id="confirm_driver_mobilegrid_27" class="confirm_driver_mobilegrid_27" dsid="mobilegrid_27"
+                                        name="mobilegrid_27" cellpadding=0 cellspacing=0>
+                                            <col style="width:auto;" />
+                                            <col style="width:auto;" />
+                                            <tr class="confirm_driver_mobilegrid_27_row_0">
+                                                <!-- mobilegridcell_28 -->
+                                                <td id="confirm_driver_mobilegridcell_28" name="mobilegridcell_28" class="confirm_driver_mobilegridcell_28"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- yes_confirm_button --><!--
+                                                        --><a data-role="button" name="yes_confirm_button" dsid="yes_confirm_button" class="confirm_driver_yes_confirm_button"
+                                                        id="confirm_driver_yes_confirm_button" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                                        x-apple-data-detectors="false" data-inline="true" data-mini="false" data-theme="c"
+                                                        tabindex="5">
+                                                        Yes
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_29 -->
+                                                <td id="confirm_driver_mobilegridcell_29" name="mobilegridcell_29" class="confirm_driver_mobilegridcell_29"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- no_confirm_button --><!--
+                                                        --><a data-role="button" name="no_confirm_button" dsid="no_confirm_button" class="confirm_driver_no_confirm_button"
+                                                        id="confirm_driver_no_confirm_button" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                                        x-apple-data-detectors="false" data-inline="true" data-mini="false" data-theme="c"
+                                                        tabindex="6">
+                                                        No
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="confirm_driver_mobilefooter"
+            name="mobilefooter" dsid="mobilefooter" id="confirm_driver_mobilefooter" data-theme="c">
+            </div>
+        </div>
+    </body>
+
+</html>

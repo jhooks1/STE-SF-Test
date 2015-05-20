@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            confirm_customer
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/ios-like/ios-like.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.4/jquery.mobile.structure-1.4.4.css"
+        rel="stylesheet" />
+        <link type="text/css" rel="stylesheet" href="files/views/assets/css/test.css" />
+        <script type="text/javascript" src="files/resources/lib/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.4/jquery.mobile-1.4.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery-ui-map/jquery.ui.map.full.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/model.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/Salesforce_utils.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/VisitUtil.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/databaseUtils.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="confirm_customer" id="confirm_customer"
+        class="type-interior" data-theme="c">
+            <!-- confirm_customer_header -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="c" name="confirm_customer_header" id="confirm_customer_confirm_customer_header"
+            class="confirm_customer_confirm_customer_header">
+                <h1 dsid="confirm_customer_header">
+                    Select Customer
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="confirm_customer_mobilecontainer" name="mobilecontainer"
+            class="confirm_customer_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="c">
+                <link href="confirm_customer.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="confirm_customer.js">
+                </script>
+                <!-- directions_select_customer -->
+                <div name="directions_select_customer" id="confirm_customer_directions_select_customer"
+                dsid="directions_select_customer" data-role="appery_label" class="confirm_customer_directions_select_customer">
+                    Select your customer for this shift.
+                </div>
+                <!-- customer_event_list -->
+                <ul data-role="listview" id="confirm_customer_customer_event_list" class="confirm_customer_customer_event_list"
+                name="customer_event_list" dsid="customer_event_list" data-inset="true" data-theme="c"
+                data-divider-theme="b" data-count-theme="b" style="">
+                    <!-- customer_list_item -->
+                    <li id="confirm_customer_customer_list_item" name="customer_list_item" dsid="customer_list_item"
+                    tabindex="1" data-icon="none" class="confirm_customer_customer_list_item  ui-btn ui-btn-icon-right ui-icon-none">
+                        <div class="ui-li-static-container ui-btn">
+                            <!-- customer_name_label -->
+                            <div name="customer_name_label" id="confirm_customer_customer_name_label" dsid="customer_name_label"
+                            data-role="appery_label" class="confirm_customer_customer_name_label">
+                            </div>
+                            <!-- customer_id_label -->
+                            <div name="customer_id_label" id="confirm_customer_customer_id_label" dsid="customer_id_label"
+                            data-role="appery_label" class="confirm_customer_customer_id_label">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- ConfirmandStart_label -->
+                <div name="ConfirmandStart_label" id="confirm_customer_ConfirmandStart_label" dsid="ConfirmandStart_label"
+                data-role="appery_label" class="confirm_customer_ConfirmandStart_label">
+                    Confirm and Start Shift
+                </div>
+                <!-- confirm_and_start_grid -->
+                <div class="confirm_customer_confirm_and_start_grid_wrapper" data-wrapper-for="confirm_and_start_grid">
+                    <table id="confirm_customer_confirm_and_start_grid" class="confirm_customer_confirm_and_start_grid"
+                    dsid="confirm_and_start_grid" name="confirm_and_start_grid" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="confirm_customer_confirm_and_start_grid_row_0">
+                            <!-- mobilegridcell_12 -->
+                            <td id="confirm_customer_mobilegridcell_12" name="mobilegridcell_12" class="confirm_customer_mobilegridcell_12"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_27 -->
+                                    <div name="mobilelabel_27" id="confirm_customer_mobilelabel_27" dsid="mobilelabel_27"
+                                    data-role="appery_label" class="confirm_customer_mobilelabel_27">
+                                        Driver:
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_22 -->
+                            <td id="confirm_customer_mobilegridcell_22" name="mobilegridcell_22" class="confirm_customer_mobilegridcell_22"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- Driver_name_label -->
+                                    <div name="Driver_name_label" id="confirm_customer_Driver_name_label" dsid="Driver_name_label"
+                                    data-role="appery_label" class="confirm_customer_Driver_name_label">
+                                        Driver
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="confirm_customer_confirm_and_start_grid_row_1">
+                            <!-- mobilegridcell_14 -->
+                            <td id="confirm_customer_mobilegridcell_14" name="mobilegridcell_14" class="confirm_customer_mobilegridcell_14"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_28 -->
+                                    <div name="mobilelabel_28" id="confirm_customer_mobilelabel_28" dsid="mobilelabel_28"
+                                    data-role="appery_label" class="confirm_customer_mobilelabel_28">
+                                        Truck:
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_23 -->
+                            <td id="confirm_customer_mobilegridcell_23" name="mobilegridcell_23" class="confirm_customer_mobilegridcell_23"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- truck_name_label -->
+                                    <div name="truck_name_label" id="confirm_customer_truck_name_label" dsid="truck_name_label"
+                                    data-role="appery_label" class="confirm_customer_truck_name_label">
+                                        Truck
+                                    </div>
+                                    <!-- trucktype_label -->
+                                    <div name="trucktype_label" id="confirm_customer_trucktype_label" dsid="trucktype_label"
+                                    data-role="appery_label" class="confirm_customer_trucktype_label">
+                                        Truck Type
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="confirm_customer_confirm_and_start_grid_row_2">
+                            <!-- mobilegridcell_19 -->
+                            <td id="confirm_customer_mobilegridcell_19" name="mobilegridcell_19" class="confirm_customer_mobilegridcell_19"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_37 -->
+                                    <div name="mobilelabel_37" id="confirm_customer_mobilelabel_37" dsid="mobilelabel_37"
+                                    data-role="appery_label" class="confirm_customer_mobilelabel_37">
+                                        Truck Load Status
+                                    </div>
+                                    <!-- load_water_directions -->
+                                    <div name="load_water_directions" id="confirm_customer_load_water_directions" dsid="load_water_directions"
+                                    data-role="appery_label" class="confirm_customer_load_water_directions">
+                                        If loaded, enter Material after shift start.
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_24 -->
+                            <td id="confirm_customer_mobilegridcell_24" name="mobilegridcell_24" class="confirm_customer_mobilegridcell_24"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- TruckLoadStatus_label -->
+                                    <div name="TruckLoadStatus_label" id="confirm_customer_TruckLoadStatus_label" dsid="TruckLoadStatus_label"
+                                    data-role="appery_label" class="confirm_customer_TruckLoadStatus_label">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="confirm_customer_confirm_and_start_grid_row_3">
+                            <!-- mobilegridcell_20 -->
+                            <td id="confirm_customer_mobilegridcell_20" name="mobilegridcell_20" class="confirm_customer_mobilegridcell_20"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_25 -->
+                            <td id="confirm_customer_mobilegridcell_25" name="mobilegridcell_25" class="confirm_customer_mobilegridcell_25"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="confirm_customer_confirm_and_start_grid_row_4">
+                            <!-- mobilegridcell_21 -->
+                            <td id="confirm_customer_mobilegridcell_21" name="mobilegridcell_21" class="confirm_customer_mobilegridcell_21"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_33 -->
+                                    <div name="mobilelabel_33" id="confirm_customer_mobilelabel_33" dsid="mobilelabel_33"
+                                    data-role="appery_label" class="confirm_customer_mobilelabel_33">
+                                        Box
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_26 -->
+                            <td id="confirm_customer_mobilegridcell_26" name="mobilegridcell_26" class="confirm_customer_mobilegridcell_26"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- boxnumber -->
+                                    <div name="boxnumber" id="confirm_customer_boxnumber" dsid="boxnumber" data-role="appery_label"
+                                    class="confirm_customer_boxnumber">
+                                        boxnumber
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="confirm_customer_confirm_and_start_grid_row_5">
+                            <!-- mobilegridcell_30 -->
+                            <td id="confirm_customer_mobilegridcell_30" name="mobilegridcell_30" class="confirm_customer_mobilegridcell_30"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_31 -->
+                            <td id="confirm_customer_mobilegridcell_31" name="mobilegridcell_31" class="confirm_customer_mobilegridcell_31"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- boxloadstatus -->
+                                    <div name="boxloadstatus" id="confirm_customer_boxloadstatus" dsid="boxloadstatus"
+                                    data-role="appery_label" class="confirm_customer_boxloadstatus">
+                                        boxloadstatus
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="confirm_customer_confirm_and_start_grid_row_6">
+                            <!-- mobilegridcell_34 -->
+                            <td id="confirm_customer_mobilegridcell_34" name="mobilegridcell_34" class="confirm_customer_mobilegridcell_34"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_29 -->
+                                    <div name="mobilelabel_29" id="confirm_customer_mobilelabel_29" dsid="mobilelabel_29"
+                                    data-role="appery_label" class="confirm_customer_mobilelabel_29">
+                                        Customer:
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_35 -->
+                            <td id="confirm_customer_mobilegridcell_35" name="mobilegridcell_35" class="confirm_customer_mobilegridcell_35"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- selected_customer_label -->
+                                    <div name="selected_customer_label" id="confirm_customer_selected_customer_label"
+                                    dsid="selected_customer_label" data-role="appery_label" class="confirm_customer_selected_customer_label">
+                                        selected_customer_label
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- Start_Shift_button --><!--
+                --><a data-role="button" name="Start_Shift_button" dsid="Start_Shift_button" class="confirm_customer_Start_Shift_button"
+                id="confirm_customer_Start_Shift_button" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                x-apple-data-detectors="false" data-mini="false" data-theme="c" tabindex="2">
+                Start Shift
+                </a>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="confirm_customer_mobilefooter"
+            name="mobilefooter" dsid="mobilefooter" id="confirm_customer_mobilefooter" data-theme="c">
+            </div>
+        </div>
+    </body>
+
+</html>

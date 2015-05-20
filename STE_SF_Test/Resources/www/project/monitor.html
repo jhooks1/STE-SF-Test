@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            monitor
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/ios-like/ios-like.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.4/jquery.mobile.structure-1.4.4.css"
+        rel="stylesheet" />
+        <link type="text/css" rel="stylesheet" href="files/views/assets/css/test.css" />
+        <script type="text/javascript" src="files/resources/lib/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.4/jquery.mobile-1.4.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery-ui-map/jquery.ui.map.full.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/model.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/Salesforce_utils.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/VisitUtil.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/databaseUtils.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="monitor" id="monitor" class="type-interior"
+        data-theme="c">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="c" name="mobileheader" id="monitor_mobileheader" class="monitor_mobileheader">
+                <h1 dsid="mobileheader">
+                    &nbsp;
+                </h1>
+                <!-- offsite_box_man --><!--
+                --><a data-role="button" name="offsite_box_man" dsid="offsite_box_man" class="monitor_offsite_box_man ui-btn-right"
+                style='min-height:20px; ' id="monitor_offsite_box_man" data-corners="true" data-icon="grid"
+                data-iconpos="notext" x-apple-data-detectors="false" data-inline='true' data-mini='true'
+                data-theme="c" tabindex="13">
+                &nbsp;
+                </a>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="monitor_mobilecontainer" name="mobilecontainer" class="monitor_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="c">
+                <link href="monitor.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="monitor.js">
+                </script>
+                <!-- mobilegrid_64 -->
+                <div class="monitor_mobilegrid_64_wrapper" data-wrapper-for="mobilegrid_64">
+                    <table id="monitor_mobilegrid_64" class="monitor_mobilegrid_64" dsid="mobilegrid_64"
+                    name="mobilegrid_64" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <tr class="monitor_mobilegrid_64_row_0">
+                            <!-- mobilegridcell_65 -->
+                            <td id="monitor_mobilegridcell_65" name="mobilegridcell_65" class="monitor_mobilegridcell_65"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- current_site_id_label -->
+                                    <div name="current_site_id_label" id="monitor_current_site_id_label" dsid="current_site_id_label"
+                                    data-role="appery_label" class="siteId  monitor_current_site_id_label">
+                                        Current Site ID not set.
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="monitor_mobilegrid_64_row_1">
+                            <!-- mobilegridcell_green -->
+                            <td id="monitor_mobilegridcell_green" name="mobilegridcell_green" class="monitor_mobilegridcell_green"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- googlemap -->
+                <div id="monitor_googlemap" dsid="googlemap" name="googlemap" data-role="appery_googlemap"
+                tiggzitype="object" apperytype="object" class='monitor_googlemap' style='width:100%;'>
+                    <img class='monitor_googlemap' src="http://assets1.geocommons.com/d51ab1366bec6a2c4954db979e5921bd4cc140db/images/no_preview_map.png?1311276822"
+                    />
+                </div>
+                <ul data-role="listview" id="monitor_googlemap_markers" name="googlemap_markers"
+                dsid="googlemap_markers" style="display:none">
+                    <!-- marker_3 -->
+                    <li id="monitor_marker_3" name="marker_3" dsid="marker_3" tiggzitype="marker" apperytype="marker"
+                    rendered="true" latitude="" longitude="" text="Here" address="Weston, WV" show_info="true"
+                    style="display:none">
+                        <div id="monitor_marker_3_infoWindow" name="marker_3_infoWindowContent" class='monitor_marker_3'>
+                        </div>
+                    </li>
+                </ul>
+                <!-- interval_input -->
+                <div data-role="fieldcontain" class="monitor_interval_input ">
+                    <input type="text" name="interval_input" dsid="interval_input" value="15" placeholder=""
+                    id="monitor_interval_input" tabindex="6" multiple data-theme="c" data-mini="true"
+                    class="monitor_interval_input" />
+                </div>
+                <!-- toggle_tracking --><!--
+                --><a data-role="button" name="toggle_tracking" dsid="toggle_tracking" class="monitor_toggle_tracking"
+                style='min-height:20px; ' id="monitor_toggle_tracking" data-corners="true" data-icon="none"
+                data-iconpos='nowhere' x-apple-data-detectors="false" data-mini="true" data-theme="c"
+                tabindex="3">
+                &nbsp;
+                </a>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="monitor_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="monitor_mobilefooter" data-theme="c">
+                <!-- siteTest_button --><!--
+                --><a data-role="button" name="siteTest_button" dsid="siteTest_button" class="monitor_siteTest_button"
+                style='margin-left:5px; ' id="monitor_siteTest_button" data-corners="true" data-icon="none"
+                data-iconpos='nowhere' x-apple-data-detectors="false" data-inline='true' data-mini='true'
+                data-theme="c" tabindex="11">
+                GeoEnter
+                </a><!--
+                --><!-- mobilebutton_33 --><!--
+                --><a data-role="button" name="mobilebutton_33" dsid="mobilebutton_33" class="monitor_mobilebutton_33"
+                style='margin-left:5px; ' id="monitor_mobilebutton_33" data-corners="true" data-icon="none"
+                data-iconpos='nowhere' x-apple-data-detectors="false" data-inline='true' data-mini='true'
+                data-theme="c" tabindex="16">
+                GeoExit
+                </a><!--
+                --><!-- mobilebutton_5 --><!--
+                --><a data-role="button" name="mobilebutton_5" dsid="mobilebutton_5" class="monitor_mobilebutton_5"
+                style='margin-left:5px; ' id="monitor_mobilebutton_5" data-corners="true" data-icon="none"
+                data-iconpos='nowhere' x-apple-data-detectors="false" data-inline='true' data-mini='true'
+                data-theme="c" tabindex="2">
+                StopShift
+                </a>
+            </div>
+            <!-- end_shift_pop_up -->
+            <div data-role="popup" name="end_shift_pop_up" dsid="end_shift_pop_up" id="monitor_end_shift_pop_up"
+            class="popup  monitor_end_shift_pop_up" data-corners="false" data-dismissible="false"
+            data-overlay-theme="" data-theme="" data-shadow="true" data-arrow="l" data-tolerance="1,1,1,1"
+            opacity=".8" data-overlay-theme="a">
+                <div class="ui-popup-content-wrapper">
+                    <!-- mobilegrid_8 -->
+                    <div class="monitor_mobilegrid_8_wrapper" data-wrapper-for="mobilegrid_8">
+                        <table id="monitor_mobilegrid_8" class="monitor_mobilegrid_8" dsid="mobilegrid_8"
+                        name="mobilegrid_8" cellpadding=0 cellspacing=0>
+                            <col style="width:100%;" />
+                            <tr class="monitor_mobilegrid_8_row_0">
+                                <!-- mobilegridcell_9 -->
+                                <td id="monitor_mobilegridcell_9" name="mobilegridcell_9" class="monitor_mobilegridcell_9"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="monitor_mobilegrid_8_row_1">
+                                <!-- mobilegridcell_11 -->
+                                <td id="monitor_mobilegridcell_11" name="mobilegridcell_11" class="monitor_mobilegridcell_11"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="monitor_mobilegrid_8_row_2">
+                                <!-- mobilegridcell_13 -->
+                                <td id="monitor_mobilegridcell_13" name="mobilegridcell_13" class="monitor_mobilegridcell_13"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- spacer_74 -->
+                                        <div id="monitor_spacer_74" data-role="appery_spacer" dsid="spacer_74" class='mobilespacer monitor_spacer_74'>
+                                        </div>
+                                        <!-- shift_ID_label -->
+                                        <div name="shift_ID_label" id="monitor_shift_ID_label" dsid="shift_ID_label" data-role="appery_label"
+                                        class="monitor_shift_ID_label">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="monitor_mobilegrid_8_row_3">
+                                <!-- mobilegridcell_14 -->
+                                <td id="monitor_mobilegridcell_14" name="mobilegridcell_14" class="monitor_mobilegridcell_14"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="monitor_mobilegrid_8_row_4">
+                                <!-- mobilegridcell_15 -->
+                                <td id="monitor_mobilegridcell_15" name="mobilegridcell_15" class="monitor_mobilegridcell_15"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- End_shift_Directions -->
+                                        <div name="End_shift_Directions" id="monitor_End_shift_Directions" dsid="End_shift_Directions"
+                                        data-role="appery_label" class="popup  monitor_End_shift_Directions">
+                                            End Shift?
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="monitor_mobilegrid_8_row_5">
+                                <!-- mobilegridcell_16 -->
+                                <td id="monitor_mobilegridcell_16" name="mobilegridcell_16" class="monitor_mobilegridcell_16"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="monitor_mobilegrid_8_row_6">
+                                <!-- mobilegridcell_73 -->
+                                <td id="monitor_mobilegridcell_73" name="mobilegridcell_73" class="monitor_mobilegridcell_73"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- end_shift_yes_button --><!--
+                                        --><a data-role="button" name="end_shift_yes_button" dsid="end_shift_yes_button" class="popup  monitor_end_shift_yes_button"
+                                        id="monitor_end_shift_yes_button" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                        x-apple-data-detectors="false" data-inline="true" data-mini="false" data-theme="c"
+                                        tabindex="7">
+                                        Yes
+                                        </a><!--
+                                        --><!-- end_shift_no_button --><!--
+                                        --><a data-role="button" name="end_shift_no_button" dsid="end_shift_no_button" class="monitor_end_shift_no_button"
+                                        id="monitor_end_shift_no_button" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                        x-apple-data-detectors="false" data-inline="true" data-mini="false" data-theme="c"
+                                        tabindex="8">
+                                        No
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- weclomeSitepopup_1 -->
+            <div data-role="popup" name="weclomeSitepopup_1" dsid="weclomeSitepopup_1" id="monitor_weclomeSitepopup_1"
+            class="popup  monitor_weclomeSitepopup_1" data-corners="false" data-dismissible="false"
+            data-overlay-theme="" data-theme="" data-shadow="true" data-arrow="l" data-tolerance="1,1,1,1"
+            opacity="0.25">
+                <div class="ui-popup-content-wrapper">
+                    <!-- cancel --><!--
+                    --><a data-role="button" name="cancel" dsid="cancel" class="cancel  monitor_cancel"
+                    id="monitor_cancel" data-corners="true" data-icon="delete" data-iconpos="left" x-apple-data-detectors="false"
+                    data-inline="true" data-mini="true" data-theme="c" tabindex="31" align="right">
+                    CANCEL
+                    </a><!--
+                    --><!-- visit_event_grid -->
+                    <div class="monitor_visit_event_grid_wrapper" data-wrapper-for="visit_event_grid">
+                        <table id="monitor_visit_event_grid" class="popup  monitor_visit_event_grid" dsid="visit_event_grid"
+                        name="visit_event_grid" cellpadding=0 cellspacing=0>
+                            <col style="width:252px;" />
+                            <col style="width:auto;" />
+                            <tr class="monitor_visit_event_grid_row_0">
+                                <!-- mobilegridcell_24 -->
+                                <td id="monitor_mobilegridcell_24" name="mobilegridcell_24" class="monitor_mobilegridcell_24"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- welcomeToLabel_1 -->
+                                        <div name="welcomeToLabel_1" id="monitor_welcomeToLabel_1" dsid="welcomeToLabel_1"
+                                        data-role="appery_label" class="sitewelcome  monitor_welcomeToLabel_1">
+                                            Site Entered, welcome to:
+                                        </div>
+                                        <!-- enter_geo_site_name -->
+                                        <div name="enter_geo_site_name" id="monitor_enter_geo_site_name" dsid="enter_geo_site_name"
+                                        data-role="appery_label" class="monitor_enter_geo_site_name">
+                                        </div>
+                                        <!-- log_off_site_act_label -->
+                                        <div name="log_off_site_act_label" id="monitor_log_off_site_act_label" dsid="log_off_site_act_label"
+                                        data-role="appery_label" class="monitor_log_off_site_act_label">
+                                            Offsite Activity:
+                                        </div>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_60 -->
+                                <td id="monitor_mobilegridcell_60" name="mobilegridcell_60" class="monitor_mobilegridcell_60"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="monitor_visit_event_grid_row_1">
+                                <!-- mobilegridcell_26 -->
+                                <td id="monitor_mobilegridcell_26" name="mobilegridcell_26" class="monitor_mobilegridcell_26"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- log_activity --><!--
+                                        --><a data-role="button" name="log_activity" dsid="log_activity" class="logactivityButton  monitor_log_activity"
+                                        id="monitor_log_activity" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                        x-apple-data-detectors="false" data-inline="true" data-mini="false" data-theme="b"
+                                        tabindex="27">
+                                        Log Activity
+                                        </a><!--
+                                        --><!-- load_from_truck_button --><!--
+                                        --><a data-role="button" name="load_from_truck_button" dsid="load_from_truck_button"
+                                        class="monitor_load_from_truck_button" id="monitor_load_from_truck_button" data-corners="true"
+                                        data-icon="none" data-iconpos='nowhere' x-apple-data-detectors="false" data-inline="true"
+                                        data-mini="true" data-theme="c" tabindex="35">
+                                        Load Material on Truck?
+                                        </a><!--
+                                        --><!-- unload_from_truck_button --><!--
+                                        --><a data-role="button" name="unload_from_truck_button" dsid="unload_from_truck_button"
+                                        class="monitor_unload_from_truck_button" id="monitor_unload_from_truck_button" data-corners="true"
+                                        data-icon="none" data-iconpos='nowhere' x-apple-data-detectors="false" data-inline="true"
+                                        data-mini="true" data-theme="c" tabindex="25">
+                                        Unload Material from Truck?
+                                        </a><!--
+                                        --><!-- unload_mat_from_box_button --><!--
+                                        --><a data-role="button" name="unload_mat_from_box_button" dsid="unload_mat_from_box_button"
+                                        class="monitor_unload_mat_from_box_button" id="monitor_unload_mat_from_box_button"
+                                        data-corners="true" data-icon="none" data-iconpos='nowhere' x-apple-data-detectors="false"
+                                        data-inline="true" data-mini="true" data-theme="c" tabindex="39">
+                                        Unload Material from Box?
+                                        </a><!--
+                                        --><!-- select_material_list -->
+                                        <ul data-role="listview" id="monitor_select_material_list" class="monitor_select_material_list"
+                                        name="select_material_list" dsid="select_material_list" data-inset="true" data-theme="c"
+                                        data-divider-theme="b" data-count-theme="b" style="">
+                                            <!-- select_material_list_2 -->
+                                            <li id="monitor_select_material_list_2" name="select_material_list_2" dsid="select_material_list_2"
+                                            tabindex="28" data-icon="none" class="monitor_select_material_list_2  ui-btn ui-btn-icon-right ui-icon-none">
+                                                <div class="ui-li-static-container ui-btn">
+                                                    <!-- material_name_item -->
+                                                    <div name="material_name_item" id="monitor_material_name_item" dsid="material_name_item"
+                                                    data-role="appery_label" class="monitor_material_name_item">
+                                                    </div>
+                                                    <!-- material_id_item -->
+                                                    <div name="material_id_item" id="monitor_material_id_item" dsid="material_id_item"
+                                                    data-role="appery_label" class="monitor_material_id_item">
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_61 -->
+                                <td id="monitor_mobilegridcell_61" name="mobilegridcell_61" class="monitor_mobilegridcell_61"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="monitor_visit_event_grid_row_2">
+                                <!-- mobilegridcell_28 -->
+                                <td id="monitor_mobilegridcell_28" name="mobilegridcell_28" class="monitor_mobilegridcell_28"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- dropboxofftruck_button --><!--
+                                        --><a data-role="button" name="dropboxofftruck_button" dsid="dropboxofftruck_button"
+                                        class="monitor_dropboxofftruck_button" id="monitor_dropboxofftruck_button" data-corners="true"
+                                        data-icon="none" data-iconpos='nowhere' x-apple-data-detectors="false" data-inline="true"
+                                        data-mini="true" data-theme="c" tabindex="21">
+                                        Drop Box off Truck
+                                        </a><!--
+                                        --><!-- pickupboxontruck_botton --><!--
+                                        --><a data-role="button" name="pickupboxontruck_botton" dsid="pickupboxontruck_botton"
+                                        class="monitor_pickupboxontruck_botton" id="monitor_pickupboxontruck_botton" data-corners="true"
+                                        data-icon="none" data-iconpos='nowhere' x-apple-data-detectors="false" data-inline="true"
+                                        data-mini="true" data-theme="c" tabindex="26">
+                                        Pickup Box on Truck
+                                        </a><!--
+                                        --><!-- box_list_select -->
+                                        <ul data-role="listview" id="monitor_box_list_select" class="monitor_box_list_select"
+                                        name="box_list_select" dsid="box_list_select" data-inset="true" data-theme="c" data-divider-theme="b"
+                                        data-count-theme="b" style="">
+                                            <!-- box_list_item_off_site -->
+                                            <li id="monitor_box_list_item_off_site" name="box_list_item_off_site" dsid="box_list_item_off_site"
+                                            tabindex="36" data-icon="none" class="monitor_box_list_item_off_site  ui-btn ui-btn-icon-right ui-icon-none">
+                                                <div class="ui-li-static-container ui-btn">
+                                                    <!-- box_name_label -->
+                                                    <div name="box_name_label" id="monitor_box_name_label" dsid="box_name_label" data-role="appery_label"
+                                                    class="monitor_box_name_label">
+                                                    </div>
+                                                    <!-- box_id_label -->
+                                                    <div name="box_id_label" id="monitor_box_id_label" dsid="box_id_label" data-role="appery_label"
+                                                    class="monitor_box_id_label">
+                                                        box_id
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_62 -->
+                                <td id="monitor_mobilegridcell_62" name="mobilegridcell_62" class="monitor_mobilegridcell_62"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="monitor_visit_event_grid_row_3">
+                                <!-- mobilegridcell_29 -->
+                                <td id="monitor_mobilegridcell_29" name="mobilegridcell_29" class="monitor_mobilegridcell_29"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- box_number_label -->
+                                        <div name="box_number_label" id="monitor_box_number_label" dsid="box_number_label"
+                                        data-role="appery_label" class="monitor_box_number_label">
+                                            Box _Number
+                                        </div>
+                                        <!-- box_loaded_directions -->
+                                        <div name="box_loaded_directions" id="monitor_box_loaded_directions" dsid="box_loaded_directions"
+                                        data-role="appery_label" class="monitor_box_loaded_directions">
+                                            Is your box loaded with material?
+                                        </div>
+                                        <!-- yes_boxisfull_button --><!--
+                                        --><a data-role="button" name="yes_boxisfull_button" dsid="yes_boxisfull_button" class="monitor_yes_boxisfull_button"
+                                        id="monitor_yes_boxisfull_button" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                        x-apple-data-detectors="false" data-inline="true" data-mini="true" data-theme="c"
+                                        tabindex="37">
+                                        Yes
+                                        </a><!--
+                                        --><!-- no_boxisempty_button --><!--
+                                        --><a data-role="button" name="no_boxisempty_button" dsid="no_boxisempty_button" class="monitor_no_boxisempty_button"
+                                        id="monitor_no_boxisempty_button" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                        x-apple-data-detectors="false" data-inline="true" data-mini="true" data-theme="c"
+                                        tabindex="38">
+                                        No
+                                        </a><!--
+                                        --><!-- activity_confirm -->
+                                        <div name="activity_confirm" id="monitor_activity_confirm" dsid="activity_confirm"
+                                        data-role="appery_label" class="monitor_activity_confirm">
+                                        </div>
+                                        <!-- close_welcome_popup_button_1 --><!--
+                                        --><a data-role="button" name="close_welcome_popup_button_1" dsid="close_welcome_popup_button_1"
+                                        class="monitor_close_welcome_popup_button_1" id="monitor_close_welcome_popup_button_1"
+                                        data-corners="true" data-icon="check" data-iconpos="left" x-apple-data-detectors="false"
+                                        data-inline="true" data-mini="false" data-theme="c" tabindex="12">
+                                        OK
+                                        </a><!--
+                                        --><!-- selected_material_display -->
+                                        <div name="selected_material_display" id="monitor_selected_material_display" dsid="selected_material_display"
+                                        data-role="appery_label" class="monitor_selected_material_display">
+                                        </div>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_63 -->
+                                <td id="monitor_mobilegridcell_63" name="mobilegridcell_63" class="monitor_mobilegridcell_63"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- exit_geo_popup -->
+            <div data-role="popup" name="exit_geo_popup" dsid="exit_geo_popup" id="monitor_exit_geo_popup"
+            class="popup  monitor_exit_geo_popup" data-corners="false" data-dismissible="true"
+            data-overlay-theme="" data-theme="" data-shadow="true" data-arrow="l" data-tolerance="1,1,1,1">
+                <div class="ui-popup-content-wrapper">
+                    <!-- leaving_geo_label -->
+                    <div name="leaving_geo_label" id="monitor_leaving_geo_label" dsid="leaving_geo_label"
+                    data-role="appery_label" class="monitor_leaving_geo_label">
+                        You are leaving...
+                    </div>
+                    <!-- spacer_39 -->
+                    <div id="monitor_spacer_39" data-role="appery_spacer" dsid="spacer_39" class='mobilespacer monitor_spacer_39'>
+                    </div>
+                    <!-- leaving_geo_site_name -->
+                    <div name="leaving_geo_site_name" id="monitor_leaving_geo_site_name" dsid="leaving_geo_site_name"
+                    data-role="appery_label" class="monitor_leaving_geo_site_name">
+                    </div>
+                    <!-- spacer_40 -->
+                    <div id="monitor_spacer_40" data-role="appery_spacer" dsid="spacer_40" class='mobilespacer monitor_spacer_40'>
+                    </div>
+                    <!-- ok_close_button --><!--
+                    --><a data-role="button" name="ok_close_button" dsid="ok_close_button" class="monitor_ok_close_button"
+                    id="monitor_ok_close_button" data-corners="false" data-icon="none" data-iconpos='nowhere'
+                    x-apple-data-detectors="false" data-mini="true" data-theme="c" tabindex="17">
+                    OK
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

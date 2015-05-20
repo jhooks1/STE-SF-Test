@@ -1,0 +1,237 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.4/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer */
+.ui-content.confirm_driver_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* mobilegrid_19 */
+.confirm_driver_mobilegrid_19 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.confirm_driver_mobilegrid_19_wrapper {
+
+}
+.confirm_driver_mobilegrid_19 > tr > td {
+	vertical-align: top;
+}
+.confirm_driver_mobilegrid_19_row_0, .confirm_driver_mobilegrid_19_row_0 > td {
+	height: 30px
+}
+.confirm_driver_mobilegrid_19_row_1, .confirm_driver_mobilegrid_19_row_1 > td {
+	height: 30px
+}
+.confirm_driver_mobilegrid_19_row_2, .confirm_driver_mobilegrid_19_row_2 > td {
+	height: 30px
+}
+.confirm_driver_mobilegrid_19_row_3, .confirm_driver_mobilegrid_19_row_3 > td {
+	height: 30px
+}
+/* mobilegridcell_20 */
+.confirm_driver_mobilegridcell_20 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.confirm_driver_mobilegridcell_20 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* enter_pin_label */
+.confirm_driver_enter_pin_label {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 22px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_24 */
+.confirm_driver_mobilegridcell_24 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.confirm_driver_mobilegridcell_24 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* enter_pin_input */
+.confirm_driver_enter_pin_input {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilegridcell_25 */
+.confirm_driver_mobilegridcell_25 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.confirm_driver_mobilegridcell_25 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilebutton_4 */
+#confirm_driver_mobilebutton_4 {
+
+}
+.ui-btn.confirm_driver_mobilebutton_4 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilegridcell_26 */
+.confirm_driver_mobilegridcell_26 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.confirm_driver_mobilegridcell_26 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilegrid_11 */
+.confirm_driver_mobilegrid_11 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.confirm_driver_mobilegrid_11_wrapper {
+
+}
+.confirm_driver_mobilegrid_11 > tr > td {
+	vertical-align: top;
+}
+.confirm_driver_mobilegrid_11_row_0, .confirm_driver_mobilegrid_11_row_0 > td {
+	height: 30px
+}
+.confirm_driver_mobilegrid_11_row_1, .confirm_driver_mobilegrid_11_row_1 > td {
+	height: 30px
+}
+.confirm_driver_mobilegrid_11_row_2, .confirm_driver_mobilegrid_11_row_2 > td {
+	height: 30px
+}
+.confirm_driver_mobilegrid_11_row_3, .confirm_driver_mobilegrid_11_row_3 > td {
+	height: 30px
+}
+/* mobilegridcell_12 */
+.confirm_driver_mobilegridcell_12 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.confirm_driver_mobilegridcell_12 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* sorry_no_pin */
+.confirm_driver_sorry_no_pin {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 14px;
+	margin: 4px 0px 4px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_14 */
+.confirm_driver_mobilegridcell_14 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.confirm_driver_mobilegridcell_14 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* welcome_label */
+.confirm_driver_welcome_label {
+	text-decoration: none; font-weight: normal; text-align: center; font-family: Helvetica; font-size: 28px;
+	margin: 4px 0px 4px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_16 */
+.confirm_driver_mobilegridcell_16 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.confirm_driver_mobilegridcell_16 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* driver_name_return_label */
+.confirm_driver_driver_name_return_label {
+	text-decoration: none; font-weight: bold; color: #3b7ee3; text-align: center; font-family: Helvetica; font-size: 32px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_18 */
+.confirm_driver_mobilegridcell_18 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.confirm_driver_mobilegridcell_18 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilegrid_27 */
+.confirm_driver_mobilegrid_27 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.confirm_driver_mobilegrid_27_wrapper {
+
+}
+.confirm_driver_mobilegrid_27 > tr > td {
+	vertical-align: top;
+}
+.confirm_driver_mobilegrid_27_row_0, .confirm_driver_mobilegrid_27_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_28 */
+.confirm_driver_mobilegridcell_28 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.confirm_driver_mobilegridcell_28 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* yes_confirm_button */
+#confirm_driver_yes_confirm_button {
+	display: none;
+}
+.ui-btn.confirm_driver_yes_confirm_button {
+	margin: 4px 5px 4px 30px;
+}
+/* mobilegridcell_29 */
+.confirm_driver_mobilegridcell_29 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.confirm_driver_mobilegridcell_29 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* no_confirm_button */
+#confirm_driver_no_confirm_button {
+	display: none;
+}
+.ui-btn.confirm_driver_no_confirm_button {
+	margin: 4px 5px 4px 30px;
+}
+/* mobilefooter */
+.confirm_driver_mobilefooter {
+	min-height:38px;
+}

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            confirm_truck
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/ios-like/ios-like.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.4/jquery.mobile.structure-1.4.4.css"
+        rel="stylesheet" />
+        <link type="text/css" rel="stylesheet" href="files/views/assets/css/test.css" />
+        <script type="text/javascript" src="files/resources/lib/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.4/jquery.mobile-1.4.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery-ui-map/jquery.ui.map.full.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/model.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/Salesforce_utils.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/VisitUtil.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/databaseUtils.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="confirm_truck" id="confirm_truck"
+        class="type-interior" data-theme="c">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="c" name="mobileheader" id="confirm_truck_mobileheader" class="confirm_truck_mobileheader">
+                <h1 dsid="mobileheader">
+                    &nbsp;
+                </h1>
+                <!-- mobilegrid_89 -->
+                <div class="confirm_truck_mobilegrid_89_wrapper" data-wrapper-for="mobilegrid_89">
+                    <table id="confirm_truck_mobilegrid_89" class="confirm_truck_mobilegrid_89" dsid="mobilegrid_89"
+                    name="mobilegrid_89" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <tr class="confirm_truck_mobilegrid_89_row_0">
+                            <!-- mobilegridcell_90 -->
+                            <td id="confirm_truck_mobilegridcell_90" name="mobilegridcell_90" class="confirm_truck_mobilegridcell_90"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- Shift_Details_Label -->
+                                    <div name="Shift_Details_Label" id="confirm_truck_Shift_Details_Label" dsid="Shift_Details_Label"
+                                    data-role="appery_label" class="confirm_truck_Shift_Details_Label">
+                                        Truck Details
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="confirm_truck_mobilegrid_89_row_1">
+                            <!-- mobilegridcell_94 -->
+                            <td id="confirm_truck_mobilegridcell_94" name="mobilegridcell_94" class="confirm_truck_mobilegridcell_94"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- status_grid -->
+                                    <div class="confirm_truck_status_grid_wrapper" data-wrapper-for="status_grid">
+                                        <table id="confirm_truck_status_grid" class="confirm_truck_status_grid" dsid="status_grid"
+                                        name="status_grid" cellpadding=0 cellspacing=0>
+                                            <col style="width:auto;" />
+                                            <col style="width:auto;" />
+                                            <col style="width:auto;" />
+                                            <col style="width:auto;" />
+                                            <tr class="confirm_truck_status_grid_row_0">
+                                                <!-- mobilegridcell_4 -->
+                                                <td id="confirm_truck_mobilegridcell_4" name="mobilegridcell_4" class="confirm_truck_mobilegridcell_4"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- Driver_label_status -->
+                                                        <div name="Driver_label_status" id="confirm_truck_Driver_label_status" dsid="Driver_label_status"
+                                                        data-role="appery_label" class="confirm_truck_Driver_label_status">
+                                                            Driver
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_5 -->
+                                                <td id="confirm_truck_mobilegridcell_5" name="mobilegridcell_5" class="confirm_truck_mobilegridcell_5"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- truck_statusgrid_label -->
+                                                        <div name="truck_statusgrid_label" id="confirm_truck_truck_statusgrid_label" dsid="truck_statusgrid_label"
+                                                        data-role="appery_label" class="confirm_truck_truck_statusgrid_label">
+                                                            Truck
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_8 -->
+                                                <td id="confirm_truck_mobilegridcell_8" name="mobilegridcell_8" class="confirm_truck_mobilegridcell_8"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- boxLabel_status_grid -->
+                                                        <div name="boxLabel_status_grid" id="confirm_truck_boxLabel_status_grid" dsid="boxLabel_status_grid"
+                                                        data-role="appery_label" class="confirm_truck_boxLabel_status_grid">
+                                                            Box
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_9 -->
+                                                <td id="confirm_truck_mobilegridcell_9" name="mobilegridcell_9" class="confirm_truck_mobilegridcell_9"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- box_load_status_label_status_grid -->
+                                                        <div name="box_load_status_label_status_grid" id="confirm_truck_box_load_status_label_status_grid"
+                                                        dsid="box_load_status_label_status_grid" data-role="appery_label" class="confirm_truck_box_load_status_label_status_grid">
+                                                            Box Status
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="confirm_truck_status_grid_row_1">
+                                                <!-- mobilegridcell_6 -->
+                                                <td id="confirm_truck_mobilegridcell_6" name="mobilegridcell_6" class="confirm_truck_mobilegridcell_6"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- driverName_statusgrid_label -->
+                                                        <div name="driverName_statusgrid_label" id="confirm_truck_driverName_statusgrid_label"
+                                                        dsid="driverName_statusgrid_label" data-role="appery_label" class="confirm_truck_driverName_statusgrid_label">
+                                                            DriverName
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_7 -->
+                                                <td id="confirm_truck_mobilegridcell_7" name="mobilegridcell_7" class="confirm_truck_mobilegridcell_7"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- truckName_statusgrid_label -->
+                                                        <div name="truckName_statusgrid_label" id="confirm_truck_truckName_statusgrid_label"
+                                                        dsid="truckName_statusgrid_label" data-role="appery_label" class="confirm_truck_truckName_statusgrid_label">
+                                                            TruckName
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_10 -->
+                                                <td id="confirm_truck_mobilegridcell_10" name="mobilegridcell_10" class="confirm_truck_mobilegridcell_10"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- box_statusgrid_label -->
+                                                        <div name="box_statusgrid_label" id="confirm_truck_box_statusgrid_label" dsid="box_statusgrid_label"
+                                                        data-role="appery_label" class="confirm_truck_box_statusgrid_label">
+                                                            Box
+                                                        </div>
+                                                        <!-- water_truck_load_status -->
+                                                        <div name="water_truck_load_status" id="confirm_truck_water_truck_load_status" dsid="water_truck_load_status"
+                                                        data-role="appery_label" class="confirm_truck_water_truck_load_status">
+                                                            unloaded
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_11 -->
+                                                <td id="confirm_truck_mobilegridcell_11" name="mobilegridcell_11" class="confirm_truck_mobilegridcell_11"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- boxmaterial_statusgrid_label -->
+                                                        <div name="boxmaterial_statusgrid_label" id="confirm_truck_boxmaterial_statusgrid_label"
+                                                        dsid="boxmaterial_statusgrid_label" data-role="appery_label" class="confirm_truck_boxmaterial_statusgrid_label">
+                                                            BoxMaterial
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="confirm_truck_mobilecontainer" name="mobilecontainer"
+            class="confirm_truck_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="c">
+                <link href="confirm_truck.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="confirm_truck.js">
+                </script>
+                <!-- select_truck_grid -->
+                <div class="confirm_truck_select_truck_grid_wrapper" data-wrapper-for="select_truck_grid">
+                    <table id="confirm_truck_select_truck_grid" class="confirm_truck_select_truck_grid"
+                    dsid="select_truck_grid" name="select_truck_grid" cellpadding=0 cellspacing=0>
+                        <col style="width:288px;" />
+                        <tr class="confirm_truck_select_truck_grid_row_0">
+                            <!-- mobilegridcell_13 -->
+                            <td id="confirm_truck_mobilegridcell_13" name="mobilegridcell_13" class="confirm_truck_mobilegridcell_13"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- selectTruckDirections -->
+                                    <div name="selectTruckDirections" id="confirm_truck_selectTruckDirections" dsid="selectTruckDirections"
+                                    data-role="appery_label" class="confirm_truck_selectTruckDirections">
+                                        Please select your Truck.
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="confirm_truck_select_truck_grid_row_1">
+                            <!-- mobilegridcell_15 -->
+                            <td id="confirm_truck_mobilegridcell_15" name="mobilegridcell_15" class="confirm_truck_mobilegridcell_15"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- truck_list -->
+                                    <ul data-role="listview" id="confirm_truck_truck_list" class="confirm_truck_truck_list"
+                                    name="truck_list" dsid="truck_list" data-inset="true" data-theme="c" data-divider-theme="b"
+                                    data-count-theme="b" style="">
+                                        <!-- truck_select_items -->
+                                        <li id="confirm_truck_truck_select_items" name="truck_select_items" dsid="truck_select_items"
+                                        data-icon="none" class="confirm_truck_truck_select_items  ui-btn-icon-right ui-icon-none">
+                                            <div class="ui-li-static-container">
+                                                <!-- truck_name_list -->
+                                                <div name="truck_name_list" id="confirm_truck_truck_name_list" dsid="truck_name_list"
+                                                data-role="appery_label" class="confirm_truck_truck_name_list">
+                                                    truck_name
+                                                </div>
+                                                <!-- truck_id_list -->
+                                                <div name="truck_id_list" id="confirm_truck_truck_id_list" dsid="truck_id_list"
+                                                data-role="appery_label" class="confirm_truck_truck_id_list">
+                                                    truck_id
+                                                </div>
+                                                <!-- truck_type_list -->
+                                                <div name="truck_type_list" id="confirm_truck_truck_type_list" dsid="truck_type_list"
+                                                data-role="appery_label" class="confirm_truck_truck_type_list">
+                                                    truck_type
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- truck_loaded_with_box_grid -->
+                <div class="confirm_truck_truck_loaded_with_box_grid_wrapper" data-wrapper-for="truck_loaded_with_box_grid">
+                    <table id="confirm_truck_truck_loaded_with_box_grid" class="confirm_truck_truck_loaded_with_box_grid"
+                    dsid="truck_loaded_with_box_grid" name="truck_loaded_with_box_grid" cellpadding=0
+                    cellspacing=0>
+                        <col style="width:auto;" />
+                        <tr class="confirm_truck_truck_loaded_with_box_grid_row_0">
+                            <!-- mobilegridcell_24 -->
+                            <td id="confirm_truck_mobilegridcell_24" name="mobilegridcell_24" class="confirm_truck_mobilegridcell_24"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- truckLoadedwithBox_label -->
+                                    <div name="truckLoadedwithBox_label" id="confirm_truck_truckLoadedwithBox_label"
+                                    dsid="truckLoadedwithBox_label" data-role="appery_label" class="confirm_truck_truckLoadedwithBox_label">
+                                        Is your Truck loaded (w/ a box)?
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="confirm_truck_truck_loaded_with_box_grid_row_1">
+                            <!-- mobilegridcell_26 -->
+                            <td id="confirm_truck_mobilegridcell_26" name="mobilegridcell_26" class="confirm_truck_mobilegridcell_26"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- yes_box_ontruck_button --><!--
+                                    --><a data-role="button" name="yes_box_ontruck_button" dsid="yes_box_ontruck_button"
+                                    class="confirm_truck_yes_box_ontruck_button" id="confirm_truck_yes_box_ontruck_button"
+                                    data-corners="true" data-icon="none" data-iconpos='nowhere' x-apple-data-detectors="false"
+                                    data-inline="true" data-mini="false" data-theme="c" tabindex="3">
+                                    yes
+                                    </a><!--
+                                    --><!-- no_boxontruck_button --><!--
+                                    --><a data-role="button" name="no_boxontruck_button" dsid="no_boxontruck_button" class="confirm_truck_no_boxontruck_button"
+                                    id="confirm_truck_no_boxontruck_button" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                    x-apple-data-detectors="false" data-inline="true" data-mini="false" data-theme="c"
+                                    tabindex="4">
+                                    no
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- select_your_box_grid -->
+                <div class="confirm_truck_select_your_box_grid_wrapper" data-wrapper-for="select_your_box_grid">
+                    <table id="confirm_truck_select_your_box_grid" class="confirm_truck_select_your_box_grid"
+                    dsid="select_your_box_grid" name="select_your_box_grid" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <tr class="confirm_truck_select_your_box_grid_row_0">
+                            <!-- mobilegridcell_78 -->
+                            <td id="confirm_truck_mobilegridcell_78" name="mobilegridcell_78" class="confirm_truck_mobilegridcell_78"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- selectbox_directions_label -->
+                                    <div name="selectbox_directions_label" id="confirm_truck_selectbox_directions_label"
+                                    dsid="selectbox_directions_label" data-role="appery_label" class="confirm_truck_selectbox_directions_label">
+                                        Please select the box on your truck.
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="confirm_truck_select_your_box_grid_row_1">
+                            <!-- mobilegridcell_80 -->
+                            <td id="confirm_truck_mobilegridcell_80" name="mobilegridcell_80" class="confirm_truck_mobilegridcell_80"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- box_list -->
+                                    <ul data-role="listview" id="confirm_truck_box_list" class="confirm_truck_box_list"
+                                    name="box_list" dsid="box_list" data-inset="true" data-theme="c" data-divider-theme="b"
+                                    data-count-theme="b" style="">
+                                        <!-- selectBox_list -->
+                                        <li id="confirm_truck_selectBox_list" name="selectBox_list" dsid="selectBox_list"
+                                        tabindex="2" data-icon="none" class="confirm_truck_selectBox_list  ui-btn ui-btn-icon-right ui-icon-none">
+                                            <div class="ui-li-static-container ui-btn">
+                                                <!-- box_name -->
+                                                <div name="box_name" id="confirm_truck_box_name" dsid="box_name" data-role="appery_label"
+                                                class="confirm_truck_box_name">
+                                                </div>
+                                                <!-- box_id_label -->
+                                                <div name="box_id_label" id="confirm_truck_box_id_label" dsid="box_id_label" data-role="appery_label"
+                                                class="confirm_truck_box_id_label">
+                                                    box_id
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- box_loaded_material_grid -->
+                <div class="confirm_truck_box_loaded_material_grid_wrapper" data-wrapper-for="box_loaded_material_grid">
+                    <table id="confirm_truck_box_loaded_material_grid" class="confirm_truck_box_loaded_material_grid"
+                    dsid="box_loaded_material_grid" name="box_loaded_material_grid" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <tr class="confirm_truck_box_loaded_material_grid_row_0">
+                            <!-- mobilegridcell_73 -->
+                            <td id="confirm_truck_mobilegridcell_73" name="mobilegridcell_73" class="confirm_truck_mobilegridcell_73"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- boxLoaded_directions_Label -->
+                                    <div name="boxLoaded_directions_Label" id="confirm_truck_boxLoaded_directions_Label"
+                                    dsid="boxLoaded_directions_Label" data-role="appery_label" class="confirm_truck_boxLoaded_directions_Label">
+                                        Is your box loaded with material?
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="confirm_truck_box_loaded_material_grid_row_1">
+                            <!-- mobilegridcell_75 -->
+                            <td id="confirm_truck_mobilegridcell_75" name="mobilegridcell_75" class="confirm_truck_mobilegridcell_75"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- yes_boxisloaded_mat_button --><!--
+                                    --><a data-role="button" name="yes_boxisloaded_mat_button" dsid="yes_boxisloaded_mat_button"
+                                    class="confirm_truck_yes_boxisloaded_mat_button" id="confirm_truck_yes_boxisloaded_mat_button"
+                                    data-corners="true" data-icon="none" data-iconpos='nowhere' x-apple-data-detectors="false"
+                                    data-inline="true" data-mini="false" data-theme="c" tabindex="5">
+                                    yes
+                                    </a><!--
+                                    --><!-- no_boxisempty_button --><!--
+                                    --><a data-role="button" name="no_boxisempty_button" dsid="no_boxisempty_button" class="confirm_truck_no_boxisempty_button"
+                                    id="confirm_truck_no_boxisempty_button" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                    x-apple-data-detectors="false" data-inline="true" data-mini="false" data-theme="c"
+                                    tabindex="6">
+                                    no
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- confirm_truck_grid -->
+                <div class="confirm_truck_confirm_truck_grid_wrapper" data-wrapper-for="confirm_truck_grid">
+                    <table id="confirm_truck_confirm_truck_grid" class="confirm_truck_confirm_truck_grid"
+                    dsid="confirm_truck_grid" name="confirm_truck_grid" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <tr class="confirm_truck_confirm_truck_grid_row_0">
+                            <!-- mobilegridcell_58 -->
+                            <td id="confirm_truck_mobilegridcell_58" name="mobilegridcell_58" class="confirm_truck_mobilegridcell_58"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- confirmtruck_button --><!--
+                                    --><a data-role="button" name="confirmtruck_button" dsid="confirmtruck_button" class="confirm_truck_confirmtruck_button"
+                                    id="confirm_truck_confirmtruck_button" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                    x-apple-data-detectors="false" data-mini="false" data-theme="c" tabindex="7">
+                                    confirm truck
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

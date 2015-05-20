@@ -1,0 +1,570 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.4/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilegrid_89 */
+.confirm_truck_mobilegrid_89 {
+	height: 100%;
+	width:100%;
+	margin: -45px 0px 0px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.confirm_truck_mobilegrid_89_wrapper {
+
+}
+.confirm_truck_mobilegrid_89 > tr > td {
+	vertical-align: top;
+}
+.confirm_truck_mobilegrid_89_row_0, .confirm_truck_mobilegrid_89_row_0 > td {
+	height: 10px
+}
+.confirm_truck_mobilegrid_89_row_1, .confirm_truck_mobilegrid_89_row_1 > td {
+	height: 30px
+}
+/* mobilegridcell_90 */
+.confirm_truck_mobilegridcell_90 {
+	height:10px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+	background-color: #c7c3c3;
+}
+.confirm_truck_mobilegridcell_90 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* Shift_Details_Label */
+.confirm_truck_Shift_Details_Label {
+	text-decoration: none; font-weight: normal; color: #000000; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_94 */
+.confirm_truck_mobilegridcell_94 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.confirm_truck_mobilegridcell_94 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* status_grid */
+.confirm_truck_status_grid {
+	height: auto;
+	width:100%;
+	margin: 1px 0px 1px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.confirm_truck_status_grid_wrapper {
+
+}
+.confirm_truck_status_grid > tr > td {
+	vertical-align: top;
+}
+.confirm_truck_status_grid_row_0, .confirm_truck_status_grid_row_0 > td {
+	height: 30px
+}
+.confirm_truck_status_grid_row_1, .confirm_truck_status_grid_row_1 > td {
+	height: 30px
+}
+/* mobilegridcell_4 */
+.confirm_truck_mobilegridcell_4 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.confirm_truck_mobilegridcell_4 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* Driver_label_status */
+.confirm_truck_Driver_label_status {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 1px 0px 1px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_5 */
+.confirm_truck_mobilegridcell_5 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.confirm_truck_mobilegridcell_5 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* truck_statusgrid_label */
+.confirm_truck_truck_statusgrid_label {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 1px 0px 1px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_8 */
+.confirm_truck_mobilegridcell_8 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.confirm_truck_mobilegridcell_8 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* boxLabel_status_grid */
+.confirm_truck_boxLabel_status_grid {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 1px 0px 1px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_9 */
+.confirm_truck_mobilegridcell_9 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.confirm_truck_mobilegridcell_9 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* box_load_status_label_status_grid */
+.confirm_truck_box_load_status_label_status_grid {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 1px 0px 1px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_6 */
+.confirm_truck_mobilegridcell_6 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.confirm_truck_mobilegridcell_6 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* driverName_statusgrid_label */
+.confirm_truck_driverName_statusgrid_label {
+	text-decoration: none; font-weight: normal; color: #0f2391; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_7 */
+.confirm_truck_mobilegridcell_7 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.confirm_truck_mobilegridcell_7 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* truckName_statusgrid_label */
+.confirm_truck_truckName_statusgrid_label {
+	text-decoration: none; font-weight: normal; color: #0f2391; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_10 */
+.confirm_truck_mobilegridcell_10 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.confirm_truck_mobilegridcell_10 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* box_statusgrid_label */
+.confirm_truck_box_statusgrid_label {
+	text-decoration: none; font-weight: normal; color: #0f2391; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* water_truck_load_status */
+.confirm_truck_water_truck_load_status {
+	text-decoration: none; font-weight: normal; font-style: italic; color: #0f2391; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_11 */
+.confirm_truck_mobilegridcell_11 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.confirm_truck_mobilegridcell_11 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* boxmaterial_statusgrid_label */
+.confirm_truck_boxmaterial_statusgrid_label {
+	text-decoration: none; font-weight: normal; color: #0f2391; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilecontainer */
+.ui-content.confirm_truck_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* select_truck_grid */
+.confirm_truck_select_truck_grid {
+	height: auto;
+	width:100%;
+	margin: 1px 0px 1px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.confirm_truck_select_truck_grid_wrapper {
+
+}
+.confirm_truck_select_truck_grid > tr > td {
+	vertical-align: top;
+}
+.confirm_truck_select_truck_grid_row_0, .confirm_truck_select_truck_grid_row_0 > td {
+	height: 30px
+}
+.confirm_truck_select_truck_grid_row_1, .confirm_truck_select_truck_grid_row_1 > td {
+	height: 30px
+}
+/* mobilegridcell_13 */
+.confirm_truck_mobilegridcell_13 {
+	height:30px !important;
+	width:284px;
+	padding: 2px 2px 2px 2px;
+}
+.confirm_truck_mobilegridcell_13 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* selectTruckDirections */
+.confirm_truck_selectTruckDirections {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_15 */
+.confirm_truck_mobilegridcell_15 {
+	height:30px !important;
+	width:284px;
+	padding: 2px 2px 2px 2px;
+}
+.confirm_truck_mobilegridcell_15 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* truck_list */
+.ui-page .confirm_truck_truck_list {
+	margin: 4px 0px 0px 0px;
+}
+/* truck_select_items */
+.ui-mobile-viewport ul[data-role="listview"] li.confirm_truck_truck_select_items {
+	padding: 0;
+	margin: 0;
+}
+.ui-mobile-viewport ul[data-role="listview"] li.confirm_truck_truck_select_items .ui-li-static-container {
+	padding: 1px 1px 4px 1px;
+	padding-right: 42px;
+	padding-left: 1px;
+	min-height: 1em;
+	border-width:0;
+}
+.ui-mobile-viewport ul[data-role="listview"] li.confirm_truck_truck_select_items.ui-icon-none .ui-li-static-container {
+	padding-right: 1px; /* consider nothing */
+}
+/* mobilelistitembutton_38 */
+.confirm_truck_mobilelistitembutton_38 {
+
+}
+/* truck_name_list */
+.confirm_truck_truck_name_list {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* truck_id_list */
+.confirm_truck_truck_id_list {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* truck_type_list */
+.confirm_truck_truck_type_list {
+	text-decoration: none; font-weight: normal; color: #636060; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* truck_loaded_with_box_grid */
+.confirm_truck_truck_loaded_with_box_grid {
+	height: auto;
+	width:100%;
+	margin: 1px 0px 1px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.confirm_truck_truck_loaded_with_box_grid_wrapper {
+	display: none;
+}
+.confirm_truck_truck_loaded_with_box_grid > tr > td {
+	vertical-align: top;
+}
+.confirm_truck_truck_loaded_with_box_grid_row_0, .confirm_truck_truck_loaded_with_box_grid_row_0 > td {
+	height: 30px
+}
+.confirm_truck_truck_loaded_with_box_grid_row_1, .confirm_truck_truck_loaded_with_box_grid_row_1 > td {
+	height: 30px
+}
+/* mobilegridcell_24 */
+.confirm_truck_mobilegridcell_24 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.confirm_truck_mobilegridcell_24 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* truckLoadedwithBox_label */
+.confirm_truck_truckLoadedwithBox_label {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 18px;
+	margin: 4px 0px 4px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_26 */
+.confirm_truck_mobilegridcell_26 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.confirm_truck_mobilegridcell_26 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* yes_box_ontruck_button */
+#confirm_truck_yes_box_ontruck_button {
+	display: none;
+}
+.ui-btn.confirm_truck_yes_box_ontruck_button {
+	margin: 4px 5px 4px 5px;
+}
+/* no_boxontruck_button */
+#confirm_truck_no_boxontruck_button {
+	display: none;
+}
+.ui-btn.confirm_truck_no_boxontruck_button {
+	margin: 4px 5px 4px 5px;
+}
+/* select_your_box_grid */
+.confirm_truck_select_your_box_grid {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.confirm_truck_select_your_box_grid_wrapper {
+	display: none;
+}
+.confirm_truck_select_your_box_grid > tr > td {
+	vertical-align: top;
+}
+.confirm_truck_select_your_box_grid_row_0, .confirm_truck_select_your_box_grid_row_0 > td {
+	height: 30px
+}
+.confirm_truck_select_your_box_grid_row_1, .confirm_truck_select_your_box_grid_row_1 > td {
+	height: 30px
+}
+/* mobilegridcell_78 */
+.confirm_truck_mobilegridcell_78 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.confirm_truck_mobilegridcell_78 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* selectbox_directions_label */
+.confirm_truck_selectbox_directions_label {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 17px;
+	margin: 4px 0px 4px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_80 */
+.confirm_truck_mobilegridcell_80 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.confirm_truck_mobilegridcell_80 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* box_list */
+.ui-page .confirm_truck_box_list {
+	margin: 4px 0px 0px 0px;
+}
+/* selectBox_list */
+.ui-listview li.confirm_truck_selectBox_list {
+	display: none;
+}
+.ui-mobile-viewport ul[data-role="listview"] li.confirm_truck_selectBox_list {
+	padding: 0;
+	margin: 0;
+}
+.ui-mobile-viewport ul[data-role="listview"] li.confirm_truck_selectBox_list .ui-li-static-container {
+	padding: 5px 5px 5px 5px;
+	padding-right: 46px;
+	padding-left: 5px;
+	min-height: 1em;
+	border-width:0;
+}
+.ui-mobile-viewport ul[data-role="listview"] li.confirm_truck_selectBox_list.ui-icon-none .ui-li-static-container {
+	padding-right: 5px; /* consider nothing */
+}
+/* box_name */
+.confirm_truck_box_name {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 20px;
+	margin: 0px 0px 0px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilelistitembutton_48 */
+.confirm_truck_mobilelistitembutton_48 {
+
+}
+/* box_id_label */
+.confirm_truck_box_id_label {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 0px 0px 0px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* box_loaded_material_grid */
+.confirm_truck_box_loaded_material_grid {
+	height: auto;
+	width:100%;
+	margin: 1px 0px 1px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.confirm_truck_box_loaded_material_grid_wrapper {
+	display: none;
+}
+.confirm_truck_box_loaded_material_grid > tr > td {
+	vertical-align: top;
+}
+.confirm_truck_box_loaded_material_grid_row_0, .confirm_truck_box_loaded_material_grid_row_0 > td {
+	height: 30px
+}
+.confirm_truck_box_loaded_material_grid_row_1, .confirm_truck_box_loaded_material_grid_row_1 > td {
+	height: 30px
+}
+/* mobilegridcell_73 */
+.confirm_truck_mobilegridcell_73 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.confirm_truck_mobilegridcell_73 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* boxLoaded_directions_Label */
+.confirm_truck_boxLoaded_directions_Label {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_75 */
+.confirm_truck_mobilegridcell_75 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.confirm_truck_mobilegridcell_75 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* yes_boxisloaded_mat_button */
+#confirm_truck_yes_boxisloaded_mat_button {
+	display: none;
+}
+.ui-btn.confirm_truck_yes_boxisloaded_mat_button {
+	margin: 4px 5px 4px 5px;
+}
+/* no_boxisempty_button */
+#confirm_truck_no_boxisempty_button {
+	display: none;
+}
+.ui-btn.confirm_truck_no_boxisempty_button {
+	margin: 4px 5px 4px 5px;
+}
+/* confirm_truck_grid */
+.confirm_truck_confirm_truck_grid {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.confirm_truck_confirm_truck_grid_wrapper {
+	display: none;
+}
+.confirm_truck_confirm_truck_grid > tr > td {
+	vertical-align: top;
+}
+.confirm_truck_confirm_truck_grid_row_0, .confirm_truck_confirm_truck_grid_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_58 */
+.confirm_truck_mobilegridcell_58 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.confirm_truck_mobilegridcell_58 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* confirmtruck_button */
+#confirm_truck_confirmtruck_button {
+	display: none;
+}
+.ui-btn.confirm_truck_confirmtruck_button {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilefooter */
+.confirm_truck_mobilefooter {
+	min-height:38px;
+}
